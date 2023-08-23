@@ -3,6 +3,7 @@
     position: relative;
     transition-duration: width color 0.5s;
     transition-delay: 0.2s;
+    outline: solid 2px $black;
     &::before,
     &::after {
       content: "";
