@@ -1,0 +1,26 @@
+.activity {
+  &__img {
+    height: 255px;
+    transition: opacity 0.5s;
+  }
+  &__card:hover &__img {
+    opacity: 0.6;
+  }
+  &__btn-icon {
+    transition: transform 0.5s;
+  }
+  &__btn {
+    position: relative;
+  }
+  &__btn:hover::before {
+    content: "";
+    position: absolute;
+    left: -10px;
+    display: inline-block;
+    width: 29px;
+    height: 29px;
+    background: $secondary;
+    border-radius: 50%;
+    z-index: -1;
+  }
+}

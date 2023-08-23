@@ -1,0 +1,33 @@
+.tag {
+  &__link {
+    position: relative;
+    transition-duration: width color 0.5s;
+    transition-delay: 0.2s;
+    &::before,
+    &::after {
+      content: "";
+      left: 0;
+      top: 0;
+      display: block;
+      position: absolute;
+      z-index: -1;
+      width: 4px;
+      height: 100%;
+      background: $black;
+      transition: 1s;
+    }
+  }
+  &__link:hover {
+    color: $white;
+    font-weight: 400;
+    &::before {
+      width: 100%;
+    }
+    &::after {
+      background: $secondary;
+    }
+  }
+  &--gap {
+    gap: 8px;
+  }
+}

@@ -7,12 +7,12 @@ let pathArr = path.split("/");
 let pathName = pathArr[pathArr.length - 1];
 let htmlName = pathName.slice(0, pathName.indexOf(".html"));
 
-window.addEventListener("DOMContentLoaded", (event) => {
-  if (htmlName === "index") {
-    const memberModal = new bootstrap.Modal("#member-modal");
-    memberModal.show();
-  }
-});
+// window.addEventListener("DOMContentLoaded", (event) => {
+//   if (htmlName === "index") {
+//     const memberModal = new bootstrap.Modal("#member-modal");
+//     memberModal.show();
+//   }
+// });
 
 (() => {
   "use strict";

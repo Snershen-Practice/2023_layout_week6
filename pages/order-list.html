@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../favicon.ico" />
+    <link rel="bookmark" href="../favicon.ico" />
     <title>7TAO活動訂票網｜詳情頁</title>
   </head>
   <body>
@@ -11,56 +13,60 @@
     <main class="py-11">
       <div class="container">
         <div class="row">
-          <div class="offset-lg-3 col-lg-6 px-8">
+          <div class="offset-lg-3 col-lg-6 px-8 pb-10 mb-10">
             <!-- step -->
-            <div class="position-relative mb-10">
-              <div class="progress" style="height: 1px">
-                <div
-                  class="progress-bar"
-                  role="progressbar"
-                  aria-label="Progress"
-                  style="width: 100%"
-                  aria-valuenow="50"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                ></div>
-              </div>
-              <div>
+            <div class="progress" style="height: 1px">
+              <div
+                class="progress-bar"
+                role="progressbar"
+                aria-label="Progress"
+                style="width: 100%"
+                aria-valuenow="50"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              ></div>
+            </div>
+            <ul class="position-relative">
+              <li>
                 <button
                   type="button"
-                  class="d-block top-0 start-0 translate-middle btn btn-primary rounded-0"
+                  class="position-absolute top-0 translate-middle btn btn-primary rounded-0"
                   style="width: 3rem; height: 3rem"
                 >
-                  1
+                  <i class="icofont-verification-check fw-bold text-secondary"></i>
                   <span
                     class="fw-bold text-primary d-block text-nowrap top-100 start-50 position-absolute translate-middle mt-6"
                     >訂單確認</span
                   >
                 </button>
-              </div>
-              <button
-                type="button"
-                class="position-absolute bg-third top-0 start-50 translate-middle btn tn-outline-primary border rounded-0"
-                style="width: 3rem; height: 3rem"
-              >
-                2
-                <span
-                  class="fw-bold text-primary d-block text-nowrap top-100 start-50 position-absolute translate-middle mt-6"
-                  >結帳付款</span
+              </li>
+              <li>
+                <button
+                  type="button"
+                  class="position-absolute top-0 start-50 translate-middle btn bg-third border rounded-0"
+                  style="width: 3rem; height: 3rem"
                 >
-              </button>
-              <button
-                type="button"
-                class="position-absolute bg-third top-0 start-100 translate-middle btn btn-outline-primary border rounded-0"
-                style="width: 3rem; height: 3rem"
-              >
-                3
-                <span
-                  class="fw-bold text-primary d-block text-nowrap top-100 start-50 position-absolute translate-middle mt-6"
-                  >訂購結果</span
+                  2
+                  <span
+                    class="fw-bold text-primary d-block text-nowrap top-100 start-50 position-absolute translate-middle mt-6"
+                    >結帳付款</span
+                  >
+                </button>
+              </li>
+              <li>
+                <button
+                  type="button"
+                  class="position-absolute top-0 start-100 translate-middle btn border bg-third rounded-0"
+                  style="width: 3rem; height: 3rem"
                 >
-              </button>
-            </div>
+                  3
+                  <span
+                    class="fw-bold text-primary d-block text-nowrap top-100 start-50 position-absolute translate-middle mt-6"
+                    >訂購結果</span
+                  >
+                </button>
+              </li>
+            </ul>
           </div>
           <div class="offset-lg-3 col-lg-6">
             <!-- content -->
@@ -90,7 +96,7 @@
                 </h2>
               </div>
 
-              <form class="needs-validation font-sans" novalidate>
+              <form action="./order-pay.html" class="needs-validation font-sans" novalidate>
                 <ul class="mb-7">
                   <li class="mb-4">
                     <label for="order-name" class="mb-2">聯絡人姓名</label>
@@ -108,10 +114,10 @@
                     <div class="invalid-feedback">請輸入手機</div>
                   </li>
                 </ul>
-                <button type="submit" class="btn btn-primary w-75 fs-7 d-block mx-auto mb-4 py-2">
+                <button type="submit" class="btn btn-primary w-75 fs-7 d-block mx-auto mb-4 py-2 hover-text-secondary">
                   確認表單資料<i class="icofont-double-right fw-bold ms-1"></i>
                 </button>
-                <a href="#" class="text-center fs-8" style="color: #4f4f4f">取消購票</a>
+                <a href="detail.html" class="text-center fs-8" style="color: #4f4f4f">取消購票</a>
               </form>
             </div>
           </div>

@@ -6,6 +6,8 @@
   font-family: "Noto Sans TC", sans-serif;
 }
 
-$z-index: (
-  header: 1000,
-);
+.hover-text-secondary {
+  &:hover {
+    color: $secondary;
+  }
+}

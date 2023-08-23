@@ -11,24 +11,24 @@
     <main class="py-11">
       <div class="container">
         <div class="row">
-          <div class="offset-lg-3 col-lg-6 px-8">
+          <div class="offset-lg-3 col-lg-6 px-8 pb-10 mb-10">
             <!-- step -->
-            <div class="position-relative mb-10">
-              <div class="progress" style="height: 1px">
-                <div
-                  class="progress-bar"
-                  role="progressbar"
-                  aria-label="Progress"
-                  style="width: 100%"
-                  aria-valuenow="50"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                ></div>
-              </div>
-              <div>
+            <div class="progress" style="height: 1px">
+              <div
+                class="progress-bar"
+                role="progressbar"
+                aria-label="Progress"
+                style="width: 100%"
+                aria-valuenow="50"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              ></div>
+            </div>
+            <ul class="position-relative">
+              <li>
                 <button
                   type="button"
-                  class="d-block top-0 start-0 translate-middle btn btn-primary rounded-0"
+                  class="position-absolute top-0 translate-middle btn btn-primary rounded-0"
                   style="width: 3rem; height: 3rem"
                 >
                   <i class="icofont-verification-check fw-bold text-secondary"></i>
@@ -37,30 +37,34 @@
                     >訂單確認</span
                   >
                 </button>
-              </div>
-              <button
-                type="button"
-                class="position-absolute top-0 start-50 translate-middle btn btn-primary border rounded-0 text-secondary"
-                style="width: 3rem; height: 3rem"
-              >
-                <i class="icofont-verification-check fw-bold text-secondary"></i>
-                <span
-                  class="fw-bold text-primary d-block text-nowrap top-100 start-50 position-absolute translate-middle mt-6"
-                  >結帳付款</span
+              </li>
+              <li>
+                <button
+                  type="button"
+                  class="position-absolute top-0 start-50 translate-middle btn btn-primary border rounded-0 text-secondary"
+                  style="width: 3rem; height: 3rem"
                 >
-              </button>
-              <button
-                type="button"
-                class="position-absolute top-0 start-100 translate-middle btn btn-primary text-secondary border rounded-0"
-                style="width: 3rem; height: 3rem"
-              >
-                3
-                <span
-                  class="fw-bold text-primary d-block text-nowrap top-100 start-50 position-absolute translate-middle mt-6"
-                  >訂購結果</span
+                  <i class="icofont-verification-check fw-bold text-secondary"></i>
+                  <span
+                    class="fw-bold text-primary d-block text-nowrap top-100 start-50 position-absolute translate-middle mt-6"
+                    >結帳付款</span
+                  >
+                </button>
+              </li>
+              <li>
+                <button
+                  type="button"
+                  class="position-absolute top-0 start-100 translate-middle btn btn-primary text-secondary border rounded-0"
+                  style="width: 3rem; height: 3rem"
                 >
-              </button>
-            </div>
+                  3
+                  <span
+                    class="fw-bold text-primary d-block text-nowrap top-100 start-50 position-absolute translate-middle mt-6"
+                    >訂購結果</span
+                  >
+                </button>
+              </li>
+            </ul>
           </div>
           <div class="offset-lg-3 col-lg-6">
             <!-- content -->
@@ -94,7 +98,7 @@
                 </tbody>
               </table>
             </div>
-            <ul class="font-sans">
+            <ul class="font-sans text-dark">
               <li>請至 7-Eleven 完成取票，請於 ibon 點選【購票/取票/訂房】>【售票系統】>【取票】>【拓元售票系統】。</li>
               <li>若您未前往取票，本筆交易仍視為完成，不可取消訂單。</li>
               <li>若需退票，請按照退票辦法進行申請。</li>
